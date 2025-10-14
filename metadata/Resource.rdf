@@ -25,7 +25,6 @@
     sh:path dct:publisher ;
     sh:node :AgentShape ;
     sh:minCount 1 ;
-    sh:maxCount 1 ;
     dash:editor dash:BlankNodeEditor ;
     sh:order 3 ;
   ], [
@@ -67,6 +66,6 @@
     sh:path foaf:name ;
     sh:nodeKind sh:Literal ;
     sh:minCount 1 ;
-    sh:maxCount 2 ;
+    sh:maxCount 1 ;
     dash:editor dash:TextFieldEditor ;
   ] .

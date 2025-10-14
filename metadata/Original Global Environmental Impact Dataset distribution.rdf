@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dcat="http://www.w3.org/ns/dcat#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:ldp="http://www.w3.org/ns/ldp#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description rdf:about="http://localhost:8080/distribution/7132667c-7a55-4758-b01a-6d72abbdcbb1">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/distribution/7132667c-7a55-4758-b01a-6d72abbdcbb1#identifier">
+	<rdf:type rdf:resource="http://purl.org/spar/datacite/Identifier"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/distribution/7132667c-7a55-4758-b01a-6d72abbdcbb1#accessRights">
+	<rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="d1fcc219220b47e6802201205c1f47901953">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/distribution/7132667c-7a55-4758-b01a-6d72abbdcbb1">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Original Global Environmental Impact Dataset distribution</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/profile/02c649de-c579-43bb-b470-306abdc808c7">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Distribution Profile</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/distribution/7132667c-7a55-4758-b01a-6d72abbdcbb1">
+	<dcterms:title>Original Global Environmental Impact Dataset distribution</dcterms:title>
+	<dcat:version>Version 1</dcat:version>
+	<metadataIssued xmlns="https://w3id.org/fdp/fdp-o#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-10-14T09:42:42.086768782Z</metadataIssued>
+	<metadataModified xmlns="https://w3id.org/fdp/fdp-o#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-10-14T17:35:43.161643972Z</metadataModified>
+	<dcterms:license rdf:resource="https://www.mit.edu/~amini/LICENSE.md"/>
+	<dcterms:description>Original dataset published by Khushi Yadav</dcterms:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/distribution/7132667c-7a55-4758-b01a-6d72abbdcbb1#accessRights">
+	<dcterms:description>This resource has no access restriction</dcterms:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/distribution/7132667c-7a55-4758-b01a-6d72abbdcbb1">
+	<dcterms:conformsTo rdf:resource="http://localhost:8080/profile/02c649de-c579-43bb-b470-306abdc808c7"/>
+	<dcterms:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<metadataIdentifier xmlns="https://w3id.org/fdp/fdp-o#" rdf:resource="http://localhost:8080/distribution/7132667c-7a55-4758-b01a-6d72abbdcbb1#identifier"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/distribution/7132667c-7a55-4758-b01a-6d72abbdcbb1#identifier">
+	<dcterms:identifier>http://localhost:8080/distribution/7132667c-7a55-4758-b01a-6d72abbdcbb1</dcterms:identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/distribution/7132667c-7a55-4758-b01a-6d72abbdcbb1">
+	<dcterms:accessRights rdf:resource="http://localhost:8080/distribution/7132667c-7a55-4758-b01a-6d72abbdcbb1#accessRights"/>
+	<dcterms:publisher rdf:nodeID="d1fcc219220b47e6802201205c1f47901953"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="d1fcc219220b47e6802201205c1f47901953">
+	<foaf:name>Khushi Yadav</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/distribution/7132667c-7a55-4758-b01a-6d72abbdcbb1">
+	<dcterms:isPartOf rdf:resource="http://localhost:8080/dataset/2f8d5238-d828-40dd-b246-ff99bd17a7d0"/>
+	<SIO_000628 xmlns="http://semanticscience.org/resource/" rdf:resource="http://localhost:8080/distribution/7132667c-7a55-4758-b01a-6d72abbdcbb1/metrics/445c0a70d1e214e545b261559e2842f4"/>
+	<SIO_000628 xmlns="http://semanticscience.org/resource/" rdf:resource="http://localhost:8080/distribution/7132667c-7a55-4758-b01a-6d72abbdcbb1/metrics/5d27e854a9e78eb3f663331cd47cdc13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/distribution/7132667c-7a55-4758-b01a-6d72abbdcbb1/metrics/445c0a70d1e214e545b261559e2842f4">
+	<SIO_000628 xmlns="http://semanticscience.org/resource/" rdf:resource="https://www.ietf.org/rfc/rfc3986.txt"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/distribution/7132667c-7a55-4758-b01a-6d72abbdcbb1/metrics/5d27e854a9e78eb3f663331cd47cdc13">
+	<SIO_000628 xmlns="http://semanticscience.org/resource/" rdf:resource="https://www.wikidata.org/wiki/Q8777"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/distribution/7132667c-7a55-4758-b01a-6d72abbdcbb1/metrics/445c0a70d1e214e545b261559e2842f4">
+	<SIO_000332 xmlns="http://semanticscience.org/resource/" rdf:resource="https://www.ietf.org/rfc/rfc3986.txt"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/distribution/7132667c-7a55-4758-b01a-6d72abbdcbb1/metrics/5d27e854a9e78eb3f663331cd47cdc13">
+	<SIO_000332 xmlns="http://semanticscience.org/resource/" rdf:resource="https://www.wikidata.org/wiki/Q8777"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/distribution/7132667c-7a55-4758-b01a-6d72abbdcbb1">
+	<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-01</dcterms:issued>
+	<dcterms:columns>20</dcterms:columns>
+	<dcterms:rows>3000</dcterms:rows>
+	<dcat:byteSize>320.04KB</dcat:byteSize>
+	<dcat:downloadURL rdf:resource="https://w3id.org/FAIR-course-UT/2025-2026/group11/data"/>
+	<dcat:format>csv</dcat:format>
+	<dcat:mediaType>text/csv</dcat:mediaType>
+	<dcat:accessURL rdf:resource="https://www.kaggle.com/datasets/khushikyad001/global-environmental-impact/data"/>
+	<dcterms:conformsTo rdf:resource="http://localhost:8080/profile/02c649de-c579-43bb-b470-306abdc808c7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/profile/02c649de-c579-43bb-b470-306abdc808c7">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Distribution Profile</label>
+</rdf:Description>
+
+</rdf:RDF>

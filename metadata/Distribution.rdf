@@ -61,14 +61,12 @@
   ], [
     sh:path dct:columns;
     sh:nodeKind sh:Literal ;
-    sh:minCount 1 ;
     sh:maxCount 1 ;
     dash:editor dash:TextFieldEditor ;
     sh:order 27 ;
   ], [
     sh:path dct:rows;
     sh:nodeKind sh:Literal ;
-    sh:minCount 1 ;
     sh:maxCount 1 ;
     dash:editor dash:TextFieldEditor ;
     sh:order 28 ;

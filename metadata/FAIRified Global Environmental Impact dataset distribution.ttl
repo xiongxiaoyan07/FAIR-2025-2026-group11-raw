@@ -1,0 +1,65 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+
+<http://localhost:8080/distribution/f1eeca89-3ba0-46ec-9df4-6cc98f98548f> a dcat:Resource,
+    dcat:Distribution;
+  <http://www.w3.org/2000/01/rdf-schema#label> "FAIRified Global Environmental Impact dataset distribution";
+  dcterms:title "FAIRified Global Environmental Impact dataset distribution";
+  <https://w3id.org/fdp/fdp-o#metadataIssued> "2025-10-14T09:51:14.303885314Z"^^xsd:dateTime;
+  <https://w3id.org/fdp/fdp-o#metadataModified> "2025-10-14T17:41:10.040406767Z"^^xsd:dateTime;
+  dcterms:license <http://purl.org/NET/rdflicense/cc-zero1.0>;
+  dcterms:description """FAIRified dataset converted to RDF format, including plastic waste and deforestation usage data for 10 countries from 2020 to 2025. The dataset only contains 3000 rows of data points.In total, there are 10 columns. 
+The meaning of each column is as follows:  
+Date: Date of data recording (YYYY-MM-DD)
+Country: Country name (e.g., India, Brazil)
+Region: Region type within the country (e.g., Urban, Rural)
+Plastic_Waste_Tons: Total plastic waste generated (in tons)
+Plastic_Recycled_Tons: Amount of plastic waste recycled (in tons)
+Burned_Waste_Tons: Amount of waste burned (in tons)
+Illegal_Dumping_Cases: Number of illegal dumping incidents reported
+Trees_Cut: Number of trees cut down
+Deforestation_Area_Ha: Area deforested (in hectares)
+Forest_Fires_Reported: Number of forest fire incidents reported""";
+  dcterms:conformsTo <http://localhost:8080/profile/02c649de-c579-43bb-b470-306abdc808c7>,
+    <http://localhost:8080/profile/02c649de-c579-43bb-b470-306abdc808c7>;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>;
+  <https://w3id.org/fdp/fdp-o#metadataIdentifier> <http://localhost:8080/distribution/f1eeca89-3ba0-46ec-9df4-6cc98f98548f#identifier>;
+  dcterms:accessRights <http://localhost:8080/distribution/f1eeca89-3ba0-46ec-9df4-6cc98f98548f#accessRights>;
+  dcterms:publisher [ a foaf:Agent;
+      foaf:name "Yuhang Yang"
+    ], [ a foaf:Agent;
+      foaf:name "Xiaoyan Xiong"
+    ];
+  dcterms:isPartOf <http://localhost:8080/dataset/2f8d5238-d828-40dd-b246-ff99bd17a7d0>;
+  <http://semanticscience.org/resource/SIO_000628> <http://localhost:8080/distribution/f1eeca89-3ba0-46ec-9df4-6cc98f98548f/metrics/445c0a70d1e214e545b261559e2842f4>,
+    <http://localhost:8080/distribution/f1eeca89-3ba0-46ec-9df4-6cc98f98548f/metrics/5d27e854a9e78eb3f663331cd47cdc13>;
+  dcterms:issued "2025-10-10"^^xsd:date;
+  dcterms:columns "20";
+  dcterms:rows "3000";
+  dcat:byteSize "3.46 MB";
+  dcat:downloadURL <https://w3id.org/FAIR-course-UT/2025-2026/group11/data>;
+  dcat:format "rdf";
+  dcat:mediaType "application/rdf+xml";
+  dcat:accessURL <https://github.com/xiongxiaoyan07/FAIR-2025-2026-group11-raw/tree/main/data> .
+
+<http://localhost:8080/distribution/f1eeca89-3ba0-46ec-9df4-6cc98f98548f#identifier>
+  a <http://purl.org/spar/datacite/Identifier>;
+  dcterms:identifier "http://localhost:8080/distribution/f1eeca89-3ba0-46ec-9df4-6cc98f98548f" .
+
+<http://localhost:8080/distribution/f1eeca89-3ba0-46ec-9df4-6cc98f98548f#accessRights>
+  a dcterms:RightsStatement;
+  dcterms:description "This resource has no access restriction" .
+
+<http://localhost:8080/profile/02c649de-c579-43bb-b470-306abdc808c7> <http://www.w3.org/2000/01/rdf-schema#label>
+    "Distribution Profile", "Distribution Profile" .
+
+<http://localhost:8080/distribution/f1eeca89-3ba0-46ec-9df4-6cc98f98548f/metrics/445c0a70d1e214e545b261559e2842f4>
+  <http://semanticscience.org/resource/SIO_000628> <https://www.ietf.org/rfc/rfc3986.txt>;
+  <http://semanticscience.org/resource/SIO_000332> <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<http://localhost:8080/distribution/f1eeca89-3ba0-46ec-9df4-6cc98f98548f/metrics/5d27e854a9e78eb3f663331cd47cdc13>
+  <http://semanticscience.org/resource/SIO_000628> <https://www.wikidata.org/wiki/Q8777>;
+  <http://semanticscience.org/resource/SIO_000332> <https://www.wikidata.org/wiki/Q8777> .
