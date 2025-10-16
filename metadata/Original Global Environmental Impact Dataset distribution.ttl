@@ -28,7 +28,7 @@
   dcterms:columns "20";
   dcterms:rows "3000";
   dcat:byteSize "320.04KB";
-  dcat:downloadURL <https://w3id.org/FAIR-course-UT/2025-2026/group11/data>;
+  dcat:downloadURL <https://w3id.org/FAIR-course-UT/2025-2026/group11/originalData>;
   dcat:format "csv";
   dcat:mediaType "text/csv";
   dcat:accessURL <https://www.kaggle.com/datasets/khushikyad001/global-environmental-impact/data> .

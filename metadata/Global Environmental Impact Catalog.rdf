@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:dcat="http://www.w3.org/ns/dcat#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:ldp="http://www.w3.org/ns/ldp#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description rdf:about="http://localhost:8080/catalog/3a2963d7-29fc-4011-9f2b-5222eb70a463">
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/catalog/3a2963d7-29fc-4011-9f2b-5222eb70a463#identifier">
+	<rdf:type rdf:resource="http://purl.org/spar/datacite/Identifier"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/catalog/3a2963d7-29fc-4011-9f2b-5222eb70a463#accessRights">
+	<rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="d1fcc219220b47e6802201205c1f47901222">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/dataset/">
+	<rdf:type rdf:resource="http://www.w3.org/ns/ldp#DirectContainer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/catalog/3a2963d7-29fc-4011-9f2b-5222eb70a463">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Global Environmental Impact Catalog</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/profile/a0949e72-4466-4d53-8900-9436d1049a4b">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Catalog Profile</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/catalog/3a2963d7-29fc-4011-9f2b-5222eb70a463">
+	<dcterms:title>Global Environmental Impact Catalog</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/dataset/">
+	<dcterms:title>Datasets</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/catalog/3a2963d7-29fc-4011-9f2b-5222eb70a463">
+	<dcat:version>0.0.1</dcat:version>
+	<metadataIssued xmlns="https://w3id.org/fdp/fdp-o#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-10-14T09:10:18.712292099Z</metadataIssued>
+	<metadataModified xmlns="https://w3id.org/fdp/fdp-o#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-10-14T17:41:10.795859647Z</metadataModified>
+	<dcterms:license rdf:resource="http://purl.org/NET/rdflicense/cc-zero1.0"/>
+	<dcterms:description>This catalog contains datasets related to global environmental impact, including data on waste, deforestation, and other environmental factors.</dcterms:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/catalog/3a2963d7-29fc-4011-9f2b-5222eb70a463#accessRights">
+	<dcterms:description>This resource has no access restriction</dcterms:description>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/catalog/3a2963d7-29fc-4011-9f2b-5222eb70a463">
+	<dcterms:conformsTo rdf:resource="http://localhost:8080/profile/a0949e72-4466-4d53-8900-9436d1049a4b"/>
+	<dcterms:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
+	<metadataIdentifier xmlns="https://w3id.org/fdp/fdp-o#" rdf:resource="http://localhost:8080/catalog/3a2963d7-29fc-4011-9f2b-5222eb70a463#identifier"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/catalog/3a2963d7-29fc-4011-9f2b-5222eb70a463#identifier">
+	<dcterms:identifier>http://localhost:8080/catalog/3a2963d7-29fc-4011-9f2b-5222eb70a463</dcterms:identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/catalog/3a2963d7-29fc-4011-9f2b-5222eb70a463">
+	<dcterms:accessRights rdf:resource="http://localhost:8080/catalog/3a2963d7-29fc-4011-9f2b-5222eb70a463#accessRights"/>
+	<dcterms:publisher rdf:nodeID="d1fcc219220b47e6802201205c1f47901222"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="d1fcc219220b47e6802201205c1f47901222">
+	<foaf:name>Xiaoyan Xiong</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/catalog/3a2963d7-29fc-4011-9f2b-5222eb70a463">
+	<dcterms:isPartOf rdf:resource="http://localhost:8080"/>
+	<SIO_000628 xmlns="http://semanticscience.org/resource/" rdf:resource="http://localhost:8080/catalog/3a2963d7-29fc-4011-9f2b-5222eb70a463/metrics/445c0a70d1e214e545b261559e2842f4"/>
+	<SIO_000628 xmlns="http://semanticscience.org/resource/" rdf:resource="http://localhost:8080/catalog/3a2963d7-29fc-4011-9f2b-5222eb70a463/metrics/5d27e854a9e78eb3f663331cd47cdc13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/catalog/3a2963d7-29fc-4011-9f2b-5222eb70a463/metrics/445c0a70d1e214e545b261559e2842f4">
+	<SIO_000628 xmlns="http://semanticscience.org/resource/" rdf:resource="https://www.ietf.org/rfc/rfc3986.txt"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/catalog/3a2963d7-29fc-4011-9f2b-5222eb70a463/metrics/5d27e854a9e78eb3f663331cd47cdc13">
+	<SIO_000628 xmlns="http://semanticscience.org/resource/" rdf:resource="https://www.wikidata.org/wiki/Q8777"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/catalog/3a2963d7-29fc-4011-9f2b-5222eb70a463/metrics/445c0a70d1e214e545b261559e2842f4">
+	<SIO_000332 xmlns="http://semanticscience.org/resource/" rdf:resource="https://www.ietf.org/rfc/rfc3986.txt"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/catalog/3a2963d7-29fc-4011-9f2b-5222eb70a463/metrics/5d27e854a9e78eb3f663331cd47cdc13">
+	<SIO_000332 xmlns="http://semanticscience.org/resource/" rdf:resource="https://www.wikidata.org/wiki/Q8777"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/catalog/3a2963d7-29fc-4011-9f2b-5222eb70a463">
+	<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-10-14T09:10:18.712292099Z</dcterms:issued>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-10-14T17:07:41.327715905Z</dcterms:modified>
+	<dcat:dataset rdf:resource="http://localhost:8080/dataset/2f8d5238-d828-40dd-b246-ff99bd17a7d0"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/dataset/">
+	<ldp:contains rdf:resource="http://localhost:8080/dataset/2f8d5238-d828-40dd-b246-ff99bd17a7d0"/>
+	<ldp:hasMemberRelation rdf:resource="http://www.w3.org/ns/dcat#dataset"/>
+	<ldp:membershipResource rdf:resource="http://localhost:8080/catalog/3a2963d7-29fc-4011-9f2b-5222eb70a463"/>
+	<rdf:type rdf:resource="http://www.w3.org/ns/ldp#DirectContainer"/>
+	<dcterms:title>Datasets</dcterms:title>
+	<ldp:membershipResource rdf:resource="http://localhost:8080/catalog/3a2963d7-29fc-4011-9f2b-5222eb70a463"/>
+	<ldp:hasMemberRelation rdf:resource="http://www.w3.org/ns/dcat#dataset"/>
+	<ldp:contains rdf:resource="http://localhost:8080/dataset/2f8d5238-d828-40dd-b246-ff99bd17a7d0"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/catalog/3a2963d7-29fc-4011-9f2b-5222eb70a463">
+	<dcterms:conformsTo rdf:resource="http://localhost:8080/profile/a0949e72-4466-4d53-8900-9436d1049a4b"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://localhost:8080/profile/a0949e72-4466-4d53-8900-9436d1049a4b">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Catalog Profile</label>
+</rdf:Description>
+
+</rdf:RDF>
