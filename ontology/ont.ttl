@@ -7,8 +7,8 @@
 @base <https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#> .
 
 <https://w3id.org/FAIR-course-UT/2025-2026/group11/ont> rdf:type owl:Ontology ;
-                                                        rdfs:comment "Ontology for FAIRifying environmental impact data from CSV."@en ;
-                                                        rdfs:label "Environmental Impact Ontology"@en .
+                                                         rdfs:comment "Ontology for FAIRifying environmental impact data from CSV."@en ;
+                                                         rdfs:label "Environmental Impact Ontology"@en .
 
 #################################################################
 #    Datatypes
@@ -24,70 +24,70 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://purl.org/dc/terms/created
 <http://purl.org/dc/terms/created> rdf:type owl:DatatypeProperty ;
-                                   rdfs:domain <https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#EnvironmentalImpactObservation> ;
+                                   rdfs:domain :EnvironmentalImpactObservation ;
                                    rdfs:range xsd:date ;
                                    rdfs:comment "Date of observation"@en .
 
 
 ###  http://schema.org/addressCountry
 <http://schema.org/addressCountry> rdf:type owl:DatatypeProperty ;
-                                   rdfs:domain <https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#EnvironmentalImpactObservation> ;
+                                   rdfs:domain :EnvironmentalImpactObservation ;
                                    rdfs:range rdfs:Literal ;
                                    rdfs:comment "Country where the observation occurred, linkable to Wikidata."@en .
 
 
 ###  http://schema.org/addressRegion
 <http://schema.org/addressRegion> rdf:type owl:DatatypeProperty ;
-                                  rdfs:domain <https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#EnvironmentalImpactObservation> ;
+                                  rdfs:domain :EnvironmentalImpactObservation ;
                                   rdfs:range rdfs:Literal ;
                                   rdfs:comment "Region type (e.g., Urban, Rural, Forest, Mountain, Coastal)." .
 
 
 ###  https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#burnedWaste
 :burnedWaste rdf:type owl:DatatypeProperty ;
-             rdfs:domain <https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#WasteObservation> ;
+             rdfs:domain :WasteObservation ;
              rdfs:range xsd:decimal ;
              rdfs:comment "burned waste tons"@en .
 
 
 ###  https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#deforestationArea
 :deforestationArea rdf:type owl:DatatypeProperty ;
-                   rdfs:domain <https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#DeforestationObservation> ;
+                   rdfs:domain :DeforestationObservation ;
                    rdfs:range xsd:decimal ;
                    rdfs:comment "deforestation area"@en .
 
 
 ###  https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#forestFiresReported
 :forestFiresReported rdf:type owl:DatatypeProperty ;
-                     rdfs:domain <https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#DeforestationObservation> ;
+                     rdfs:domain :DeforestationObservation ;
                      rdfs:range xsd:integer ;
                      rdfs:comment "forest fires reported"@en .
 
 
 ###  https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#illegalDumpingCases
 :illegalDumpingCases rdf:type owl:DatatypeProperty ;
-                     rdfs:domain <https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#WasteObservation> ;
+                     rdfs:domain :WasteObservation ;
                      rdfs:range xsd:integer ;
                      rdfs:comment "illegal dumping cases"@en .
 
 
 ###  https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#plasticRecycled
 :plasticRecycled rdf:type owl:DatatypeProperty ;
-                 rdfs:domain <https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#WasteObservation> ;
+                 rdfs:domain :WasteObservation ;
                  rdfs:range xsd:decimal ;
                  rdfs:comment "plastic recycled tons"@en .
 
 
 ###  https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#plasticWaste
 :plasticWaste rdf:type owl:DatatypeProperty ;
-              rdfs:domain <https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#WasteObservation> ;
+              rdfs:domain :WasteObservation ;
               rdfs:range xsd:decimal ;
               rdfs:comment "plastic waste tons"@en .
 
 
 ###  https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#treesCut
 :treesCut rdf:type owl:DatatypeProperty ;
-          rdfs:domain <https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#DeforestationObservation> ;
+          rdfs:domain :DeforestationObservation ;
           rdfs:range xsd:integer ;
           rdfs:comment "tree cut"@en .
 
@@ -97,27 +97,21 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 
 ###  https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#DeforestationObservation
-<https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#DeforestationObservation> rdf:type owl:Class ;
-                                                                                 rdfs:subClassOf <https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#EnvironmentalImpactObservation> ;
-                                                                                 rdfs:comment "Deforestation Observation"@en .
-
-
-###  https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#EmissionObservation
-<https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#EmissionObservation> rdf:type owl:Class ;
-                                                                            rdfs:subClassOf <https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#EnvironmentalImpactObservation> ;
-                                                                            rdfs:comment "Emissions Observation"@en .
+:DeforestationObservation rdf:type owl:Class ;
+                          rdfs:subClassOf :EnvironmentalImpactObservation ;
+                          rdfs:comment "Deforestation Observation"@en .
 
 
 ###  https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#EnvironmentalImpactObservation
-<https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#EnvironmentalImpactObservation> rdf:type owl:Class ;
-                                                                                       rdfs:comment "A record of environmental impact metrics."@en ;
-                                                                                       rdfs:label "Environmental Impact Observation"@en .
+:EnvironmentalImpactObservation rdf:type owl:Class ;
+                                rdfs:comment "A record of environmental impact metrics."@en ;
+                                rdfs:label "Environmental Impact Observation"@en .
 
 
 ###  https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#WasteObservation
-<https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#WasteObservation> rdf:type owl:Class ;
-                                                                         rdfs:subClassOf <https://w3id.org/FAIR-course-UT/2025-2026/group11/ont#EnvironmentalImpactObservation> ;
-                                                                         rdfs:comment "Waste Observation"@en .
+:WasteObservation rdf:type owl:Class ;
+                  rdfs:subClassOf :EnvironmentalImpactObservation ;
+                  rdfs:comment "Waste Observation"@en .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
